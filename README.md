@@ -1,6 +1,6 @@
 # Pre-Install
 - Install `starship`
-- Install 'nerdfont', configure terminal to use nerdfont
+- Install `nerdfont`, configure terminal to use `nerdfont`
 
 # Quick Install
 ```
