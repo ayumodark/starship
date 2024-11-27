@@ -21,7 +21,6 @@ $time\
 "Pictures" = " "
 
 [git_branch]
-symbol = ""
 style = "bg:#394260"
 format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
 
@@ -35,6 +34,6 @@ format = '[$symbol$percentage]($style)'
 
 [time]
 disabled = false
-time_format = "%R"
+time_format = '%r'
 style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
