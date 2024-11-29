@@ -4,13 +4,14 @@ format = """
 [](fg:#a3aed2 bg:#769ff0)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
+$cmd_duration\
+[](fg:#394260 bg:#1d2230)\
 $git_branch\
 $git_status\
-[](fg:#394260)\
+[](fg:#1d2230)\
 $fill\
 [](fg:#1d2230)\
 $status\
-$cmd_duration\
 [](fg:#394260 bg:#1d2230)\
 $battery\
 [](fg:#769ff0 bg:#394260)\
@@ -20,38 +21,31 @@ $time\
 [▓▒░](#a3aed2)\
 \n$character"""
 
-[fill]
-symbol = ' '
-
 [directory]
-style = "fg:#e3e5e5 bg:#769ff0"
-format = "[ $path ]($style)"
+format = "[ $path ](fg:#e3e5e5 bg:#769ff0)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
+[cmd_duration]
+min_time = 1
+format = '[  $duration ](fg:#e3e5e5 bg:#394260)'
 
 [git_branch]
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
+format = '[[ $symbol$branch ](fg:#e3e5e5 bg:#1d2230)](fg:#1d2230)'
 
 [git_status]
-style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
+format = '[[($all_status$ahead_behind )](fg:#e3e5e5 bg:#1d2230)](fg:#1d2230)'
 
-[cmd_duration]
-min_time = 500
-format = '[$duration ](fg:#769ff0 bg:#1d2230)'
+[fill]
+symbol = ' '
 
 [status]
-style = 'fg:#a3aed2 bg:#1d2230'
-symbol = '󰅙  '
-success_symbol = '  ' 
-format = '[$symbol]($style)'
+symbol = '󰅙'
+success_symbol = ''
+not_executable_symbol = ''
+not_found_symbol = ''
+sigint_symbol = ''
+format = '[$symbol ](fg:#a3aed2 bg:#1d2230)'
 map_symbol = true
 disabled = false
 
@@ -62,22 +56,17 @@ charging_symbol	= '󱟠'
 discharging_symbol = '󱟞'
 unknown_symbol	= '󰁽'
 empty_symbol = '󱃍'
-format = '[$symbol$percentage ]($style)'
+format = '[ $symbol$percentage ](bg:#394260)'
 
 [[battery.display]]
 threshold = 100
-style = "bg:#394260"
 
 [memory_usage]
 disabled = false
 threshold = -1
-format = '[ $ram_pct ]($style)'
-style = "fg:#e3e5e5 bg:#769ff0"
-
+format = '[  $ram_pct ](fg:#e3e5e5 bg:#769ff0)'
 
 [time]
 disabled = false
 time_format = '%R'
-style = "bg:#1d2230"
-format = '[[  $time ](fg:#090c0c bg:#a3aed2)]($style)'
-
+format = '[[  $time ](fg:#090c0c bg:#a3aed2)](bg:#1d2230)'
