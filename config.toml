@@ -9,8 +9,9 @@ $git_status\
 [](fg:#394260)\
 $fill\
 [](fg:#394260)\
-[](fg:#769ff0 bg:#394260)\
 $battery\
+[](fg:#769ff0 bg:#394260)\
+$memory_usage\
 [](fg:#a3aed2 bg:#769ff0)\
 $time\
 [▓▒░](#a3aed2)\
@@ -42,6 +43,13 @@ format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 [battery]
 disabled = false
 format = '[$symbol$percentage]($style)'
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = '[ $ram_pct ]($style)'
+style = "fg:#e3e5e5 bg:#769ff0"
+
 
 [time]
 disabled = false
