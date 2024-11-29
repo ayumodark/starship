@@ -7,12 +7,15 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#394260)\
-[   ](fg:#a3aed2)\
+$fill\
 [](fg:#1d2230)\
 $battery\
 $time\
 [ ](fg:#1d2230)\
 \n$character"""
+
+[fill]
+symbol = ' '
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
