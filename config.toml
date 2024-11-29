@@ -6,9 +6,10 @@ $directory\
 [](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
+[](fg:#394260 bg:#1d2230)\
 $cmd_duration\
 $status\
-[](fg:#394260)\
+[](fg:#1d2230)\
 $fill\
 [](fg:#394260)\
 $battery\
@@ -44,10 +45,10 @@ format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 
 [cmd_duration]
 min_time = 500
-format = '[ $duration](fg:#769ff0 bg:#394260)'
+format = '[ $duration](fg:#769ff0 bg:#1d2230)'
 
 [status]
-style = 'fg:#a3aed2 bg:#394260'
+style = 'fg:#a3aed2 bg:#1d2230'
 symbol = ' 󰅙 '
 success_symbol = '  ' 
 format = '[$symbol]($style)'
