@@ -11,7 +11,7 @@ $fill\
 [](fg:#1d2230)\
 $status\
 $cmd_duration\
-[](fg:#394260)\
+[](fg:#394260 bg:#1d2230)\
 $battery\
 [](fg:#769ff0 bg:#394260)\
 $memory_usage\
