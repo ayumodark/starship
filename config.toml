@@ -6,6 +6,8 @@ $directory\
 [](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
+$cmd_duration\
+$status\
 [](fg:#394260)\
 $fill\
 [](fg:#394260)\
@@ -40,9 +42,30 @@ format = '[[ $symbol $branch ](fg:#769ff0 bg:#394260)]($style)'
 style = "bg:#394260"
 format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 
+[cmd_duration]
+min_time = 500
+format = '[ $duration](fg:#769ff0 bg:#394260)'
+
+[status]
+style = 'fg:#a3aed2 bg:#394260'
+symbol = ' 󰅙 '
+success_symbol = '  ' 
+format = '[$symbol]($style)'
+map_symbol = true
+disabled = false
+
 [battery]
 disabled = false
-format = '[$symbol$percentage]($style)'
+full_symbol	= '󰁹'
+charging_symbol	= '󱟠'
+discharging_symbol = '󱟞'
+unknown_symbol	= '󰁽'
+empty_symbol = '󱃍'
+format = '[$symbol$percentage ]($style)'
+
+[[battery.display]]
+threshold = 100
+style = "bg:#394260"
 
 [memory_usage]
 disabled = false
