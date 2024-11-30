@@ -1,4 +1,4 @@
-# Image
+# Images
 Left Side
 ![img1](https://github.com/ayumodark/starship/blob/images/screenshot.png)
 Right Side
