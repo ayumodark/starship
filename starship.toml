@@ -77,4 +77,5 @@ time_format = '%R'
 format = '[[ $time](fg:#090c0c bg:#a3aed2)](bg:#1d2230)'
 
 [character]
-format = ' '
+success_symbol = '[ ](bold green)'
+error_symbol = '[ ](bold red)'
