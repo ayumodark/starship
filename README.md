@@ -1,5 +1,7 @@
 # Image
+Left Side
 ![img1](https://github.com/ayumodark/starship/blob/images/screenshot.png)
+Right Side
 ![img2](https://github.com/ayumodark/starship/blob/images/screenshot2.png)
 
 # Pre-Install
