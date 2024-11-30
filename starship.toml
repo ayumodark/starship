@@ -1,25 +1,32 @@
 format = """
 [░▒▓](#a3aed2)\
-[  ](bg:#a3aed2 fg:#090c0c)\
-[](fg:#a3aed2 bg:#769ff0)\
+$os(bg:#a3aed2 fg:#090c0c)\
+[](fg:#a3aed2 bg:#769ff0)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[](fg:#769ff0 bg:#394260)\
 [  ](fg:#e3e5e5 bg:#394260)$cmd_duration\
-[](fg:#394260 bg:#1d2230)\
+[](fg:#394260 bg:#1d2230)\
 $git_branch\
 $git_status\
-[](fg:#1d2230)\
+[](fg:#1d2230)\
 $fill\
-[](fg:#1d2230)\
+[](fg:#1d2230)\
 $status\
-[](fg:#394260 bg:#1d2230)\
+[](fg:#394260 bg:#1d2230)\
 $battery\
-[](fg:#769ff0 bg:#394260)\
+[](fg:#769ff0 bg:#394260)\
 $memory_usage\
-[](fg:#a3aed2 bg:#769ff0)\
+[](fg:#a3aed2 bg:#769ff0)\
 $time\
 [▓▒░](#a3aed2)\
 \n$character"""
+
+[os]
+disabled = false
+format = '[ $symbol](bg:#a3aed2 fg:#090c0c)'
+
+[os.symbols]
+Windows = ' '
 
 [directory]
 format = "[ $path](fg:#e3e5e5 bg:#769ff0)"
@@ -31,9 +38,16 @@ min_time = 1
 format = '[$duration](fg:#e3e5e5 bg:#394260)'
 
 [git_branch]
-format = '[[ $symbol$branch](fg:#e3e5e5 bg:#1d2230)](fg:#1d2230)'
+symbol = ' '
+format = '[[ $symbol$branch](fg:#e3e5e5 bg:#1d2230)](fgi:#1d2230)'
 
 [git_status]
+ahead = ''
+behind = ''
+diverged = ''
+staged = '  '
+deleted = '  '
+modified = '  '
 format = '[[($all_status$ahead_behind)](fg:#e3e5e5 bg:#1d2230)](fg:#1d2230)'
 
 [fill]
@@ -70,3 +84,6 @@ format = '[ $ram_pct](fg:#e3e5e5 bg:#769ff0)'
 disabled = false
 time_format = '%R'
 format = '[[ $time](fg:#090c0c bg:#a3aed2)](bg:#1d2230)'
+
+[character]
+format = ' '
