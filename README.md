@@ -11,7 +11,7 @@ Right Side
 
 # Quick Install
 ```
-cd ~/.config && wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml && echo "eval "$(starship init zsh)"" >> ~/.zshrc && exec zsh
+cd ~/.config && wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml && echo 'eval "$(starship init zsh)"' >> ~/.zshrc && exec zsh
 ```
 
 # Config Details
