@@ -13,3 +13,6 @@ Right Side
 ```
 cd ~/.config && wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml && echo "eval "$(starship init bash)"" >> ~/.bashrc && exec bash
 ```
+
+# Config Details
+starship is easy to configure, see their [configuration](https://starship.rs/config) guide for details
