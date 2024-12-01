@@ -26,49 +26,7 @@ disabled = false
 format = '[ $symbol](bg:#a3aed2 fg:#090c0c)'
 
 [os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
-Windows = "󰍲 "
+Windows = ' '
 
 [directory]
 format = "[ $path](fg:#e3e5e5 bg:#769ff0)"
@@ -121,5 +79,4 @@ time_format = '%R'
 format = '[[ $time](fg:#090c0c bg:#a3aed2)](bg:#1d2230)'
 
 [character]
-success_symbol = '[ ](bold green)'
-error_symbol = '[ ](bold red)'
+format = '░▓'
