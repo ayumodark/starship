@@ -20,6 +20,7 @@ $memory_usage\
 $time\
 [](#5e81ac)\
 \n$character"""
+
 [os]
 disabled = false
 format = '[ $symbol](fg:#eceff4 bg:#5e81ac)'
