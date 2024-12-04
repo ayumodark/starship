@@ -22,4 +22,12 @@ wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/star
 ```
 
 # Config Details
-starship is easy to configure, see their [configuration](https://starship.rs/config) guide for details
+- OS icon
+- Directory
+- Git directory
+- command status
+- command duration
+- battery indicator (not on desktop, appears below 50%)
+- RAM indicator
+- clock
+- character for vim and normal mode
