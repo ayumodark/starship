@@ -123,8 +123,4 @@ format = '[[ $time](fg:#eceff4 bg:#5e81ac)](bg:#5e81ac)'
 success_symbol = '[ 󱞪 ](fg:#eceff4 bg:#5e81ac)'
 error_symbol = '[ 󱞪 ](fg:#eceff4 bg:#5e81ac)'
 vimcmd_symbol = '[ >> ](fg:#eceff4 bg:#5e81ac)'
-vimcmd_replace_symbol = '[ << ](fg:#eceff4 bg:#5e81ac)'
-vimcmd_replace_one_symbol = '[ < ](fg:#eceff4 bg:#5e81ac)'
-vimcmd_visual_symbol = '[ V ](fg:#eceff4 bg:#5e81ac)'
-
 format = '[$symbol](#5e81ac)'
