@@ -1,29 +1,29 @@
 format = """
-[░▒▓](#a3aed2)\
-$os(bg:#a3aed2 fg:#090c0c)\
-[](fg:#a3aed2 bg:#769ff0)\
+[░▒▓](#5e81ac)\
+$os\
+[](bg:#81a1c1 fg:#5e81ac)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
-[  ](fg:#e3e5e5 bg:#394260)$cmd_duration\
-[](fg:#394260 bg:#1d2230)\
+[](bg:#88c0d0 fg:#81a1c1)\
 $git_branch\
 $git_status\
-[](fg:#1d2230)\
+[](bg:#8fbcbb fg:#88c0d0)\
+[  ](fg:#eceff4 bg:#8fbcbb)$cmd_duration\
+[](#8fbcbb)\
 $fill\
-[](fg:#1d2230)\
+[](fg:#8fbcbb)\
 $status\
-[](fg:#394260 bg:#1d2230)\
+[](fg:#88c0d0 bg:#8fbcbb)\
 $battery\
-[](fg:#769ff0 bg:#394260)\
+[](fg:#81a1c1 bg:#88c0d0)\
 $memory_usage\
-[](fg:#a3aed2 bg:#769ff0)\
+[](fg:#5e81ac bg:#81a1c1)\
 $time\
-[▓▒░](#a3aed2)\
+[▓▒░](#5e81ac)\
 \n$character"""
 
 [os]
 disabled = false
-format = '[ $symbol](bg:#a3aed2 fg:#090c0c)'
+format = '[ $symbol](bg:#5e81ac fg:#eceff4)'
 
 [os.symbols]
 Alpaquita = " "
@@ -71,19 +71,19 @@ Void = " "
 Windows = "󰍲 "
 
 [directory]
-format = "[ $path](fg:#e3e5e5 bg:#769ff0)"
+format = "[ 󰉋 $path](fg:#eceff4 bg:#81a1c1)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [cmd_duration]
 min_time = 1
-format = '[$duration](fg:#e3e5e5 bg:#394260)'
+format = '[$duration](fg:#eceff4 bg:#8fbcbb)'
 
 [git_branch]
-format = '[[ $symbol$branch](fg:#e3e5e5 bg:#1d2230)](fgi:#1d2230)'
+format = '[[ $symbol$branch](fg:#eceff4 bg:#88c0d0 )](fg:#88c0d0 )'
 
 [git_status]
-format = '[[($all_status$ahead_behind)](fg:#e3e5e5 bg:#1d2230)](fg:#1d2230)'
+format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#88c0d0 )](fg:#88c0d0 )'
 
 [fill]
 symbol = ' '
@@ -94,7 +94,7 @@ success_symbol = ''
 not_executable_symbol = ''
 not_found_symbol = ''
 sigint_symbol = ''
-format = '[$symbol ](fg:#a3aed2 bg:#1d2230)'
+format = '[$symbol ](fg:#eceff4 bg:#8fbcbb)'
 map_symbol = true
 disabled = false
 
@@ -105,7 +105,7 @@ charging_symbol	= '󱟠'
 discharging_symbol = '󱟞'
 unknown_symbol	= '󰁽'
 empty_symbol = '󱃍'
-format = '[$symbol$percentage](bg:#394260)'
+format = '[$symbol$percentage](bg:#88c0d0)'
 
 [[battery.display]]
 threshold = 100
@@ -113,12 +113,12 @@ threshold = 100
 [memory_usage]
 disabled = false
 threshold = -1
-format = '[ $ram_pct](fg:#e3e5e5 bg:#769ff0)'
+format = '[ $ram_pct](fg:#eceff4  bg:#81a1c1)'
 
 [time]
 disabled = false
 time_format = '%R'
-format = '[[ $time](fg:#090c0c bg:#a3aed2)](bg:#1d2230)'
+format = '[[ $time](fg:#eceff4 bg:#5e81ac)](bg:#5e81ac)'
 
 [character]
-format = '░▓'
+format = '[░▓](#5e81ac)'
