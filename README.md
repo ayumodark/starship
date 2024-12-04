@@ -26,6 +26,7 @@ wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/star
 - Directory
 - Git directory
 - command status
+- SUDO warning
 - command duration
 - battery indicator (not on desktop, appears below 50%)
 - RAM indicator
