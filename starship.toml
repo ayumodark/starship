@@ -8,7 +8,7 @@ $git_branch\
 $git_status\
 [](fg:#81a1c1 bg:#8fbcbb)\
 $status\
-[](#8fbcbb)\
+[](#8fbcbb)$sudo\
 $fill\
 [](fg:#8fbcbb)\
 [  ](fg:#eceff4 bg:#8fbcbb)$cmd_duration\
@@ -88,6 +88,11 @@ format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
 [fill]
 symbol = ' '
 
+[sudo]
+symbol = '[SUDO](fg:#eceff4 bg:#bf616a)'
+disabled = false
+format = '[ $symbol](#bf616a)'
+
 [status]
 symbol = '󰅙'
 success_symbol = ''
@@ -98,11 +103,6 @@ format = '[ $symbol ](fg:#eceff4 bg:#8fbcbb)'
 map_symbol = true
 disabled = false
 
-[sudo]
-symbol = '[SUDO](fg:#eceff4 bg:#bf616a)'
-disabled = false
-format = '[ $symbol](#bf616a)'
-
 [battery]
 disabled = false
 full_symbol	= '󰁹'
@@ -110,7 +110,7 @@ charging_symbol	= '󱟠'
 discharging_symbol = '󱟞'
 unknown_symbol	= '󰁽'
 empty_symbol = '󱃍'
-format = '[$symbol$percentage](fg:#eceff4 bg:#88c0d0)'
+format = '[$symbol$percentage](fg:#eceff4 bg:#81a1c1)'
 
 [[battery.display]]
 threshold = 50
