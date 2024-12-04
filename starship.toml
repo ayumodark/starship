@@ -12,11 +12,11 @@ $status\
 $fill\
 [](fg:#8fbcbb)\
 [  ](fg:#eceff4 bg:#8fbcbb)$cmd_duration\
-[](fg:#88c0d0 bg:#8fbcbb)\
+[](fg:#81a1c1 bg:#8fbcbb)\
 $battery\
-[](fg:#81a1c1 bg:#88c0d0)\
+[](fg:#88c0d0 bg:#81a1c1)\
 $memory_usage\
-[](fg:#5e81ac bg:#81a1c1)\
+[](fg:#5e81ac bg:#88c0d0)\
 $time\
 [](#5e81ac)\
 \n$character"""
@@ -112,7 +112,7 @@ threshold = 50
 [memory_usage]
 disabled = false
 threshold = -1
-format = '[ $ram_pct](fg:#eceff4  bg:#81a1c1)'
+format = '[ $ram_pct](fg:#eceff4  bg:#88c0d0)'
 
 [time]
 disabled = false
