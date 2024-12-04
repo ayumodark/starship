@@ -98,6 +98,11 @@ format = '[ $symbol ](fg:#eceff4 bg:#8fbcbb)'
 map_symbol = true
 disabled = false
 
+[sudo]
+symbol = '[SUDO](fg:#eceff4 bg:#bf616a)'
+disabled = false
+format = '[ $symbol](#bf616a)'
+
 [battery]
 disabled = false
 full_symbol	= '󰁹'
