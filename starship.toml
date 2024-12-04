@@ -1,29 +1,28 @@
 format = """
-[░▒▓](#5e81ac)\
+[](#5e81ac)\
 $os\
-[](bg:#81a1c1 fg:#5e81ac)\
+[](fg:#5e81ac bg:#88c0d0)\
 $directory\
-[](bg:#88c0d0 fg:#81a1c1)\
+[](fg:#88c0d0 bg:#81a1c1)\
 $git_branch\
 $git_status\
-[](bg:#8fbcbb fg:#88c0d0)\
-[  ](fg:#eceff4 bg:#8fbcbb)$cmd_duration\
+[](fg:#81a1c1 bg:#8fbcbb)\
+$status\
 [](#8fbcbb)\
 $fill\
 [](fg:#8fbcbb)\
-$status\
+[  ](fg:#eceff4 bg:#8fbcbb)$cmd_duration\
 [](fg:#88c0d0 bg:#8fbcbb)\
 $battery\
 [](fg:#81a1c1 bg:#88c0d0)\
 $memory_usage\
 [](fg:#5e81ac bg:#81a1c1)\
 $time\
-[▓▒░](#5e81ac)\
+[](#5e81ac)\
 \n$character"""
-
 [os]
 disabled = false
-format = '[ $symbol](bg:#5e81ac fg:#eceff4)'
+format = '[ $symbol](fg:#eceff4 bg:#5e81ac)'
 
 [os.symbols]
 Alpaquita = " "
@@ -71,7 +70,7 @@ Void = " "
 Windows = "󰍲 "
 
 [directory]
-format = "[ 󰉋 $path](fg:#eceff4 bg:#81a1c1)"
+format = "[ 󰉋 $path](fg:#eceff4 bg:#88c0d0)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -80,10 +79,10 @@ min_time = 1
 format = '[$duration](fg:#eceff4 bg:#8fbcbb)'
 
 [git_branch]
-format = '[[ $symbol$branch](fg:#eceff4 bg:#88c0d0 )](fg:#88c0d0 )'
+format = '[[ $symbol$branch](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
 
 [git_status]
-format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#88c0d0 )](fg:#88c0d0 )'
+format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
 
 [fill]
 symbol = ' '
@@ -94,7 +93,7 @@ success_symbol = ''
 not_executable_symbol = ''
 not_found_symbol = ''
 sigint_symbol = ''
-format = '[$symbol ](fg:#eceff4 bg:#8fbcbb)'
+format = '[ $symbol ](fg:#eceff4 bg:#8fbcbb)'
 map_symbol = true
 disabled = false
 
@@ -105,10 +104,10 @@ charging_symbol	= '󱟠'
 discharging_symbol = '󱟞'
 unknown_symbol	= '󰁽'
 empty_symbol = '󱃍'
-format = '[$symbol$percentage](bg:#88c0d0)'
+format = '[$symbol$percentage](fg:#eceff4 bg:#88c0d0)'
 
 [[battery.display]]
-threshold = 100
+threshold = 50
 
 [memory_usage]
 disabled = false
@@ -121,4 +120,6 @@ time_format = '%R'
 format = '[[ $time](fg:#eceff4 bg:#5e81ac)](bg:#5e81ac)'
 
 [character]
-format = '[░▓](#5e81ac)'
+success_symbol = '[ 󱞪 ](fg:#eceff4 bg:#5e81ac)'
+error_symbol = '[ 󱞪 ](fg:#eceff4 bg:#5e81ac)'
+format = '[$symbol](#5e81ac)'
