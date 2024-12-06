@@ -2,7 +2,7 @@ format = """
 [](#5e81ac)\
 $os\
 [](fg:#5e81ac bg:#88c0d0)\
-$directory\
+[ 󰉋 ](fg:#4C566A bg:#88c0d0)$directory\
 [](fg:#88c0d0 bg:#81a1c1)\
 $git_branch\
 $git_status\
@@ -15,9 +15,9 @@ $fill\
 [](fg:#81a1c1 bg:#8fbcbb)\
 $battery\
 [](fg:#88c0d0 bg:#81a1c1)\
-$memory_usage\
+[ ](fg:#4C566A bg:#88c0d0)$memory_usage\
 [](fg:#5e81ac bg:#88c0d0)\
-$time\
+[ ](fg:#4C566A bg:#5e81ac)$time\
 [](#5e81ac)\
 \n$character"""
 
@@ -71,17 +71,19 @@ Void = " "
 Windows = "󰍲 "
 
 [directory]
-format = "[ 󰉋 $path](fg:#4C566A bg:#88c0d0)"
+truncation_length = 1
+read_only = '[ ](fg:#4C566A)'
+format = "[$path$read_only](fg:#eceff4 bg:#88c0d0)"
 
 [cmd_duration]
 min_time = 1
-format = '[$duration](fg:#4C566A bg:#8fbcbb)'
+format = '[$duration](fg:#eceff4 bg:#8fbcbb)'
 
 [git_branch]
-format = '[[ $symbol$branch](fg:#4C566A bg:#81a1c1 )](fg:#81a1c1 )'
+format = '[[$branch](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
 
 [git_status]
-format = '[[($all_status$ahead_behind)](fg:#4C566A bg:#81a1c1 )](fg:#81a1c1 )'
+format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
 
 [fill]
 symbol = ' '
@@ -103,12 +105,12 @@ disabled = false
 
 [battery]
 disabled = false
-full_symbol	= '󰁹'
-charging_symbol	= '󱟠'
-discharging_symbol = '󱟞'
-unknown_symbol	= '󰁽'
-empty_symbol = '󱃍'
-format = '[$symbol$percentage](fg:#4C566A bg:#81a1c1)'
+full_symbol	= '[󰁹](fg:#4C566A bg:#81a1c1)'
+charging_symbol	= '[󱟠](fg:#4C566A bg:#81a1c1)'
+discharging_symbol = '[󱟞](fg:#4C566A bg:#81a1c1)'
+unknown_symbol	= '[󰁽](fg:#4C566A bg:#81a1c1)'
+empty_symbol = '[󱃍](fg:#4C566A bg:#81a1c1)'
+format = '[$symbol$percentage](fg:#eceff4 bg:#81a1c1)'
 
 [[battery.display]]
 threshold = 50
@@ -116,12 +118,12 @@ threshold = 50
 [memory_usage]
 disabled = false
 threshold = -1
-format = '[ $ram_pct](fg:#4C566A bg:#88c0d0)'
+format = '[$ram_pct](fg:#eceff4 bg:#88c0d0)'
 
 [time]
 disabled = false
 time_format = '%R'
-format = '[[ $time](fg:#4C566A bg:#5e81ac)](bg:#5e81ac)'
+format = '[[$time](fg:#eceff4 bg:#5e81ac)](bg:#5e81ac)'
 
 [character]
 success_symbol = '[ 󱞪 ](fg:#4C566A bg:#5e81ac)'
