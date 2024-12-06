@@ -11,7 +11,7 @@ $status\
 [](#8fbcbb)$sudo\
 $fill\
 [](fg:#8fbcbb)\
-[  ](fg:#eceff4 bg:#8fbcbb)$cmd_duration\
+[  ](fg:#4C566A bg:#8fbcbb)$cmd_duration\
 [](fg:#81a1c1 bg:#8fbcbb)\
 $battery\
 [](fg:#88c0d0 bg:#81a1c1)\
@@ -23,7 +23,7 @@ $time\
 
 [os]
 disabled = false
-format = '[ $symbol](fg:#eceff4 bg:#5e81ac)'
+format = '[ $symbol](fg:#4C566A bg:#5e81ac)'
 
 [os.symbols]
 Alpaquita = " "
@@ -71,19 +71,17 @@ Void = " "
 Windows = "󰍲 "
 
 [directory]
-format = "[ 󰉋 $path](fg:#eceff4 bg:#88c0d0)"
-truncation_length = 3
-truncation_symbol = "…/"
+format = "[ 󰉋 $path](fg:#4C566A bg:#88c0d0)"
 
 [cmd_duration]
 min_time = 1
-format = '[$duration](fg:#eceff4 bg:#8fbcbb)'
+format = '[$duration](fg:#4C566A bg:#8fbcbb)'
 
 [git_branch]
-format = '[[ $symbol$branch](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
+format = '[[ $symbol$branch](fg:#4C566A bg:#81a1c1 )](fg:#81a1c1 )'
 
 [git_status]
-format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
+format = '[[($all_status$ahead_behind)](fg:#4C566A bg:#81a1c1 )](fg:#81a1c1 )'
 
 [fill]
 symbol = ' '
@@ -99,7 +97,7 @@ success_symbol = ''
 not_executable_symbol = ''
 not_found_symbol = ''
 sigint_symbol = ''
-format = '[ $symbol ](fg:#eceff4 bg:#8fbcbb)'
+format = '[ $symbol ](fg:#4C566A bg:#8fbcbb)'
 map_symbol = true
 disabled = false
 
@@ -110,7 +108,7 @@ charging_symbol	= '󱟠'
 discharging_symbol = '󱟞'
 unknown_symbol	= '󰁽'
 empty_symbol = '󱃍'
-format = '[$symbol$percentage](fg:#eceff4 bg:#81a1c1)'
+format = '[$symbol$percentage](fg:#4C566A bg:#81a1c1)'
 
 [[battery.display]]
 threshold = 50
@@ -118,15 +116,15 @@ threshold = 50
 [memory_usage]
 disabled = false
 threshold = -1
-format = '[ $ram_pct](fg:#eceff4  bg:#88c0d0)'
+format = '[ $ram_pct](fg:#4C566A bg:#88c0d0)'
 
 [time]
 disabled = false
 time_format = '%R'
-format = '[[ $time](fg:#eceff4 bg:#5e81ac)](bg:#5e81ac)'
+format = '[[ $time](fg:#4C566A bg:#5e81ac)](bg:#5e81ac)'
 
 [character]
-success_symbol = '[ 󱞪 ](fg:#eceff4 bg:#5e81ac)'
-error_symbol = '[ 󱞪 ](fg:#eceff4 bg:#5e81ac)'
-vimcmd_symbol = '[ >> ](fg:#eceff4 bg:#5e81ac)'
+success_symbol = '[ 󱞪 ](fg:#4C566A bg:#5e81ac)'
+error_symbol = '[ 󱞪 ](fg:#4C566A bg:#5e81ac)'
+vimcmd_symbol = '[ >> ](fg:#4C566A bg:#5e81ac)'
 format = '[$symbol](#5e81ac)'
