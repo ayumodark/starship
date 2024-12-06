@@ -72,7 +72,7 @@ Windows = "󰍲 "
 
 [directory]
 truncation_length = 1
-read_only = '[ ](fg:#4C566A)'
+read_only = '[ ](fg:#4C566A bg:#88c0d0)'
 format = "[$path$read_only](fg:#eceff4 bg:#88c0d0)"
 
 [cmd_duration]
@@ -80,7 +80,8 @@ min_time = 1
 format = '[$duration](fg:#eceff4 bg:#8fbcbb)'
 
 [git_branch]
-format = '[[$branch](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
+symbol = '[ ](fg:#4C566A bg:#81a1c1)'
+format = '[[ $symbol$branch](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
 
 [git_status]
 format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
