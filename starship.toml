@@ -72,7 +72,8 @@ Windows = "[ 󰍲 ](fg:#5e81ac bg:#2e3440)"
 
 [directory]
 truncation_length = 1
-read_only = '[ ](fg:#5e81ac bg:#3b4252)'
+read_only = ' '
+read_only_style = '#bf616a'
 format = "[$path$read_only](fg:#d8dee9 bg:#3b4252)"
 
 [git_branch]
