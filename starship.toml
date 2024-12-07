@@ -1,117 +1,118 @@
 format = """
-[](#5e81ac)\
+[](#2e3440)\
 $os\
-[](fg:#5e81ac bg:#88c0d0)\
-[ 󰉋 ](fg:#4C566A bg:#88c0d0)$directory\
-[](fg:#88c0d0 bg:#81a1c1)\
+[](fg:#2e3440 bg:#3b4252)\
+[ 󰉋 ](fg:#5e81ac bg:#3b4252)$directory\
+[](fg:#3b4252 bg:#434c5e)\
 $git_branch\
 $git_status\
-[](fg:#81a1c1 bg:#8fbcbb)\
+[](fg:#434c5e bg:#4c566a)\
 $status\
-[](#8fbcbb)$sudo\
+[](#4c566a)$sudo\
 $fill\
-[](fg:#8fbcbb)\
-[  ](fg:#4C566A bg:#8fbcbb)$cmd_duration\
-[](fg:#81a1c1 bg:#8fbcbb)\
+[](#4c566a)\
+[  ](fg:#8fbcbb bg:#4C566A)$cmd_duration\
+[](fg:#434c5e bg:#4c566a)\
 $battery\
-[](fg:#88c0d0 bg:#81a1c1)\
-[ ](fg:#4C566A bg:#88c0d0)$memory_usage\
-[](fg:#5e81ac bg:#88c0d0)\
-[ ](fg:#4C566A bg:#5e81ac)$time\
-[](#5e81ac)\
+[](fg:#3b4252 bg:#434c5e)\
+[ ](fg:#81a1c1 bg:#3b4252)$memory_usage\
+[](fg:#2e3440 bg:#3b4252)\
+[ ](fg:#5e81ac bg:#2e3440)$time\
+[](#2e3440)\
 \n$character"""
 
 [os]
 disabled = false
-format = '[ $symbol](fg:#4C566A bg:#5e81ac)'
+format = '[$symbol](#2e3440)'
 
 [os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
-Windows = "󰍲 "
+Alpaquita = "[  ](fg:#5e81ac bg:#2e3440)"
+Alpine = "[  ](fg:#5e81ac bg:#2e3440)"
+AlmaLinux = "[  ](fg:#5e81ac bg:#2e3440)"
+Amazon = "[  ](fg:#5e81ac bg:#2e3440)"
+Android = "[   ](fg:#5e81ac bg:#2e3440)"
+Arch = "[  ](fg:#5e81ac bg:#2e3440)"
+Artix = "[  ](fg:#5e81ac bg:#2e3440)"
+CentOS = "[  ](fg:#5e81ac bg:#2e3440)"
+Debian = "[  ](fg:#5e81ac bg:#2e3440)"
+DragonFly = "[  ](fg:#5e81ac bg:#2e3440)"
+Emscripten = "[   ](fg:#5e81ac bg:#2e3440)"
+EndeavourOS = "[   ](fg:#5e81ac bg:#2e3440)"
+Fedora = "[  ](fg:#5e81ac bg:#2e3440)"
+FreeBSD = "[  ](fg:#5e81ac bg:#2e3440)"
+Garuda = "[ 󰛓 ](fg:#5e81ac bg:#2e3440)"
+Gentoo = "[  ](fg:#5e81ac bg:#2e3440)"
+HardenedBSD = "[ 󰞌 ](fg:#5e81ac bg:#2e3440)"
+Illumos = "[ 󰈸 ](fg:#5e81ac bg:#2e3440)"
+Kali = "[   ](fg:#5e81ac bg:#2e3440)"
+Linux = "[  ](fg:#5e81ac bg:#2e3440)"
+Mabox = "[  ](fg:#5e81ac bg:#2e3440)"
+Macos = "[  ](fg:#5e81ac bg:#2e3440)"
+Manjaro = "[  ](fg:#5e81ac bg:#2e3440)"
+Mariner = "[   ](fg:#5e81ac bg:#2e3440)"
+MidnightBSD = "[ ](fg:#5e81ac bg:#2e3440)"
+Mint = "[   ](fg:#5e81ac bg:#2e3440)"
+NetBSD = "[ ](fg:#5e81ac bg:#2e3440)"
+NixOS = "[  ](fg:#5e81ac bg:#2e3440)"
+OpenBSD = "[ 󰈺 ](fg:#5e81ac bg:#2e3440)"
+openSUSE = "[  ](fg:#5e81ac bg:#2e3440)"
+OracleLinux = "[ 󰌷 ](fg:#5e81ac bg:#2e3440)"
+Pop = "[   ](fg:#5e81ac bg:#2e3440)"
+Raspbian = "[  ](fg:#5e81ac bg:#2e3440)"
+Redhat = "[   ](fg:#5e81ac bg:#2e3440)"
+RedHatEnterprise = "[   ](fg:#5e81ac bg:#2e3440)"
+RockyLinux = "[   ](fg:#5e81ac bg:#2e3440)"
+Redox = "[ 󰀘 ](fg:#5e81ac bg:#2e3440)"
+Solus = "[ 󰠳 ](fg:#5e81ac bg:#2e3440)"
+SUSE = "[   ](fg:#5e81ac bg:#2e3440)"
+Ubuntu = "[  ](fg:#5e81ac bg:#2e3440)"
+Unknown = "[  ](fg:#5e81ac bg:#2e3440)"
+Void = "[  ]((fg:#5e81ac bg:#2e3440)"
+Windows = "[ 󰍲 ](fg:#5e81ac bg:#2e3440)"
 
 [directory]
 truncation_length = 1
-read_only = ' '
-format = "[$path$read_only](fg:#eceff4 bg:#88c0d0)"
-
-[cmd_duration]
-min_time = 1
-format = '[$duration](fg:#eceff4 bg:#8fbcbb)'
+read_only = '[ ](fg:#5e81ac bg:#3b4252)'
+format = "[$path$read_only](fg:#d8dee9 bg:#3b4252)"
 
 [git_branch]
-symbol = '[ ](fg:#4C566A bg:#81a1c1)'
-format = '[[ $symbol$branch](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
+symbol = '[ ](fg:#81a1c1 bg:#434c5e)'
+format = '[[ $symbol$branch](fg:#d8dee9 bg:#434c5e)](fg:#434c5e)'
 
 [git_status]
-format = '[[($all_status$ahead_behind)](fg:#eceff4 bg:#81a1c1 )](fg:#81a1c1 )'
+format = '[[($all_status$ahead_behind)](fg:#d8dee9 bg:#434c5e)](fg:#434c5e)'
+
+[status]
+symbol = '[󰅙 ](fg:#bf616a bg:#4c566a)'
+success_symbol = '[ ](fg:#a3be8c bg:#4c566a)'
+not_executable_symbol = '[ ](fg:#d08770 bg:#4c566a)'
+not_found_symbol = '[ ](fg:#ebcb8b bg:#4c566a)'
+sigint_symbol = '[󰿅 ](fg:#a3be8c bg:#4c566a)'
+format = '[$symbol](#4c566a)'
+map_symbol = true
+disabled = false
+
+[sudo]
+symbol = '[SUDO](fg:#d8dee9 bg:#bf616a)'
+disabled = false
+format = '[ $symbol](#bf616a)'
 
 [fill]
 symbol = ' '
 
-[sudo]
-symbol = '[SUDO](fg:#eceff4 bg:#bf616a)'
-disabled = false
-format = '[ $symbol](#bf616a)'
+[cmd_duration]
+min_time = 0
+format = '[$duration](fg:#d8dee9 bg:#4C566A)'
 
-[status]
-symbol = '󰅙'
-success_symbol = ''
-not_executable_symbol = ''
-not_found_symbol = ''
-sigint_symbol = ''
-format = '[ $symbol ](fg:#4C566A bg:#8fbcbb)'
-map_symbol = true
-disabled = false
 
 [battery]
 disabled = false
-full_symbol	= '[󰁹](fg:#4C566A bg:#81a1c1)'
-charging_symbol	= '[󱟠](fg:#4C566A bg:#81a1c1)'
-discharging_symbol = '[󱟞](fg:#4C566A bg:#81a1c1)'
-unknown_symbol	= '[󰁽](fg:#4C566A bg:#81a1c1)'
-empty_symbol = '[󱃍](fg:#4C566A bg:#81a1c1)'
-format = '[$symbol$percentage](fg:#eceff4 bg:#81a1c1)'
+full_symbol	= '[󰁹](fg:#81a1c1 bg:#4C566A)'
+charging_symbol	= '[󱟠](fg:#a3be8c bg:#4C566A)'
+discharging_symbol = '[󱟞](fg:#ebcb8b bg:#4C566A)'
+unknown_symbol	= '[󰁽](fg:#b48ead bg:#4C566A)'
+empty_symbol = '[󱃍](fg:#bf616a bg:#4C566A)'
+format = '[$symbol$percentage](fg:#d8dee9 bg:#434c5e)'
 
 [[battery.display]]
 threshold = 50
@@ -119,15 +120,15 @@ threshold = 50
 [memory_usage]
 disabled = false
 threshold = -1
-format = '[$ram_pct](fg:#eceff4 bg:#88c0d0)'
+format = '[$ram_pct](fg:#d8dee9 bg:#3b4252)'
 
 [time]
 disabled = false
 time_format = '%R'
-format = '[[$time](fg:#eceff4 bg:#5e81ac)](bg:#5e81ac)'
+format = '[[$time](fg:#d8dee9 bg:#2e3440)](bg:#2e3440)'
 
 [character]
-success_symbol = '[ 󱞪 ](fg:#4C566A bg:#5e81ac)'
-error_symbol = '[ 󱞪 ](fg:#4C566A bg:#5e81ac)'
-vimcmd_symbol = '[ >> ](fg:#4C566A bg:#5e81ac)'
-format = '[$symbol](#5e81ac)'
+success_symbol = '[ 󰄾 ](fg:#a3be8c bg:#2e3440)'
+error_symbol = '[ 󰄾 ](fg:#bf616a bg:#2e3440)'
+vimcmd_symbol = '[ 󰄼 ](fg:#5e81ac bg:#2e3440)'
+format = '[$symbol](#2e3440)'
