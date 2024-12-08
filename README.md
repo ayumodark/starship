@@ -2,11 +2,11 @@
 
 Left Side
 
-![img1](https://github.com/ayumodark/starship/blob/images/screenshot.png)
+![left](https://github.com/ayumodark/starship/blob/images/left.png)
 
 Right Side
 
-![img2](https://github.com/ayumodark/starship/blob/images/screenshot2.png)
+![right](https://github.com/ayumodark/starship/blob/images/right.png)
 
 **Battery module threshold = 50**
 
