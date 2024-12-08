@@ -18,7 +18,7 @@ $battery\
 [ ](fg:#81a1c1 bg:#3b4252)$memory_usage\
 [](fg:#434c5e bg:#3b4252)\
 [ ](fg:#5e81ac bg:#434c5e)$time\
-[](#2e3440)\
+[](#434c5e)\
 \n$character"""
 
 [os]
