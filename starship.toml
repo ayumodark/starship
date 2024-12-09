@@ -94,9 +94,9 @@ map_symbol = true
 disabled = false
 
 [sudo]
-symbol = '[SUDO](fg:#d8dee9 bg:#bf616a)'
+symbol = '[ SUDO](fg:#bf616a bg:#3b4252)'
 disabled = false
-format = '[ $symbol](#bf616a)'
+format = '[ $symbol](#3b4252)'
 
 [fill]
 symbol = ' '
@@ -131,5 +131,5 @@ format = '[[$time](fg:#d8dee9 bg:#434c5e)](bg:#434c5e)'
 [character]
 success_symbol = '[ 󰄾 ](fg:#a3be8c bg:#434c5e)'
 error_symbol = '[ 󰄾 ](fg:#bf616a bg:#434c5e)'
-vimcmd_symbol = '[ 󰄼 ](fg:#5e81ac bg:#434c5e)'
+vimcmd_symbol = '[  ](fg:#a3be8c bg:#434c5e)'
 format = '[$symbol](#434c5e)'
