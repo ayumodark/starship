@@ -1,12 +1,12 @@
 # Images
 
-Left Side
+Regular prompt
 
-![left](https://github.com/ayumodark/starship/blob/images/left.png)
+![starship](https://github.com/ayumodark/starship/blob/images/starship.png)
 
-Right Side
+Sudo warning
 
-![right](https://github.com/ayumodark/starship/blob/images/right.png)
+![sudo](https://github.com/ayumodark/starship/blob/images/sudo.png)
 
 **Battery module threshold = 50**
 
