@@ -96,7 +96,7 @@ disabled = false
 [sudo]
 symbol = '[SUDO](fg:#d8dee9 bg:#bf616a)'
 disabled = false
-format = '[ $symbol](#bf616a)'
+format = '[ $symbol](#bf616a)'
 
 [fill]
 symbol = ' '
