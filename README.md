@@ -1,4 +1,4 @@
-# Images
+# 📷 Images
 
 Regular prompt
 
@@ -12,18 +12,18 @@ Battery and Git
 
 ![bat&git](https://github.com/ayumodark/starship/blob/images/bat&git.png)
 
-# Requirements
+# ⚙️  Requirements
 - Install `starship`
 - Install `nerdfont`, configure terminal to use `nerdfont`
 - Install `wget`
 
-# Quick Install
+# 🚀 Quick Install
 **N.B** restart your shell to load changes
 ```
 wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml -P ~/.config
 ```
 
-# Config Details
+# 🛠️ Config Details
 - OS icon
 - Directory
 - Git directory
