@@ -8,9 +8,11 @@ Sudo warning
 
 ![sudo](https://github.com/ayumodark/starship/blob/images/sudo.png)
 
-**Battery module threshold = 50**
+Battery and Git 
 
-# Pre-Install
+![bat&git](https://github.com/ayumodark/starship/blob/images/bat&git.png)
+
+# Requirements
 - Install `starship`
 - Install `nerdfont`, configure terminal to use `nerdfont`
 - Install `wget`
