@@ -18,7 +18,6 @@ Battery and Git
 - Install `wget`
 
 # 🚀 Quick Install
-**N.B** restart your shell to load changes
 ```
 wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml -P ~/.config
 ```
