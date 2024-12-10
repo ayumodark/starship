@@ -19,7 +19,7 @@ Battery and Git
 
 # 🚀 Quick Install
 ```
-wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml -P ~/.config
+wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml -P $XDG_DATA_HOME
 ```
 
 # 🛠️ Config Details
