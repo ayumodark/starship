@@ -72,7 +72,7 @@ Windows = "[ 󰍲 ](fg:#5e81ac bg:#434c5e)"
 
 [directory]
 truncation_length = 1
-read_only = ' '
+read_only = '  '
 read_only_style = '#bf616a'
 format = "[$path$read_only](fg:#d8dee9 bg:#3b4252)"
 
