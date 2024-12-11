@@ -1,4 +1,10 @@
-# ✨ Images
+# Description
+
+This is my starship configuration, it looks good :)
+
+feel free to fork and customize to your needs
+
+## ✨ Images
 
 Regular prompt
 
@@ -12,18 +18,18 @@ Battery and Git
 
 ![bat&git](https://github.com/ayumodark/starship/blob/images/bat&git.png)
 
-# ⚙️  Requirements
+## ⚙️  Requirements
 - Install [starship](https://starship.rs/guide/#step-1-install-starship)
 - Install [nerdfont](https://www.nerdfonts.com/font-downloads)
     - configure terminal to use `nerdfont`
 - Install `wget` (usually included on major distros)
 
-# 🚀 Quick Install
+## 🚀 Quick Install
 ```
 wget https://raw.githubusercontent.com/ayumodark/starship/refs/heads/config/starship.toml -P ~/.config
 ```
 
-# 🛠️ Config Details
+## 🛠️ Config Details
 - OS icon
 - Directory
 - Git directory
