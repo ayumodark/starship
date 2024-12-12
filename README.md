@@ -6,6 +6,8 @@ feel free to fork and customize to your needs
 
 ## ✨ Images
 
+font: FiraCode NF Mono
+
 Regular prompt
 
 ![starship](https://github.com/ayumodark/starship/blob/images/starship.png)
