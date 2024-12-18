@@ -1,0 +1,135 @@
+format = """
+[](#434c5e)\
+$os\
+[](fg:#434c5e bg:#3b4252)\
+[ 󰉋 ](fg:#5e81ac bg:#3b4252)$directory\
+[](fg:#3b4252 bg:#434c5e)\
+$git_branch\
+$git_status\
+[](fg:#434c5e bg:#4c566a)\
+$status\
+[](#4c566a)$sudo\
+$fill\
+[](#4c566a)\
+[  ](fg:#8fbcbb bg:#4C566A)$cmd_duration\
+[](fg:#434c5e bg:#4c566a)\
+$battery\
+[](fg:#3b4252 bg:#434c5e)\
+[ ](fg:#81a1c1 bg:#3b4252)$memory_usage\
+[](fg:#434c5e bg:#3b4252)\
+[ ](fg:#5e81ac bg:#434c5e)$time\
+[](#434c5e)\
+\n$character"""
+
+[os]
+disabled = false
+format = '[$symbol](#434c5e)'
+
+[os.symbols]
+Alpaquita = "[  ](fg:#a3be8c bg:#434c5e)"
+Alpine = "[  ](fg:#5e81ac bg:#434c5e)"
+AlmaLinux = "[  ](fg:#2e3440  bg:#434c5e)"
+Amazon = "[  ](fg:#ebcb8b bg:#434c5e)"
+Android = "[   ](fg:#a3be8c bg:#434c5e)"
+Arch = "[  ](fg:#81a1c1 bg:#434c5e)"
+Artix = "[  ](fg:#81a1c1 bg:#434c5e)"
+CentOS = "[  ](fg:#2e3440  bg:#434c5e)"
+Debian = "[  ](fg:#bf616a bg:#434c5e)"
+DragonFly = "[  ](fg:#bf616a bg:#434c5e)"
+Emscripten = "[   ](fg:#a3be8c bg:#434c5e)"
+EndeavourOS = "[   ](fg:#b48ead bg:#434c5e)"
+Fedora = "[  ](fg:#5e81ac bg:#434c5e)"
+FreeBSD = "[  ](fg:#bf616a bg:#434c5e)"
+Garuda = "[ 󰛓 ](fg:#88c0d0 bg:#434c5e)"
+Gentoo = "[  ](fg:#d8dee9 bg:#434c5e)"
+HardenedBSD = "[ 󰞌 ](fg:#5e81ac bg:#434c5e)"
+Illumos = "[ 󰈸 ](fg:#d08770 bg:#434c5e)"
+Kali = "[   ](fg:#5e81ac bg:#434c5e)"
+Linux = "[  ](fg:#2e3440 bg:#434c5e)"
+Mabox = "[  ](fg:#a3be8c bg:#434c5e)"
+Macos = "[  ](fg:#d8dee9 bg:#434c5e)"
+Manjaro = "[  ](fg:#a3be8c bg:#434c5e)"
+Mariner = "[   ](fg:#88c0d0 bg:#434c5e)"
+MidnightBSD = "[ ](fg:#2e3440 bg:#434c5e)"
+Mint = "[   ](fg:#a3be8c bg:#434c5e)"
+NetBSD = "[  ](fg:#d08770 bg:#434c5e)"
+NixOS = "[  ](fg:#88c0d0 bg:#434c5e)"
+OpenBSD = "[ 󰈺 ](fg:#ebcb8b bg:#434c5e)"
+openSUSE = "[   ](fg:#a3be8c bg:#434c5e)"
+OracleLinux = "[ 󰌷 ](fg:#bf616a bg:#434c5e)"
+Pop = "[   ](fg:#88c0d0 bg:#434c5e)"
+Raspbian = "[  ](fg:#bf616a bg:#434c5e)"
+Redhat = "[   ](fg:#bf616a bg:#434c5e)"
+RedHatEnterprise = "[   ](fg:#bf616a bg:#434c5e)"
+RockyLinux = "[   ](fg:#a3be8c bg:#434c5e)"
+Redox = "[ 󰀘 ](fg:#2e3440  bg:#434c5e)"
+Solus = "[ 󰠳 ](fg:#2e3440 bg:#434c5e)"
+SUSE = "[   ](fg:#a3be8c bg:#434c5e)"
+Ubuntu = "[  ](fg:#d08770 bg:#434c5e)"
+Unknown = "[  ](fg:#2e3440 bg:#434c5e)"
+Void = "[  ]((fg:#a3be8c bg:#434c5e)"
+Windows = "[ 󰍲 ](fg:#5e81ac bg:#434c5e)"
+
+[directory]
+truncation_length = 1
+read_only = '  '
+read_only_style = '#bf616a'
+format = "[$path$read_only](fg:#d8dee9 bg:#3b4252)"
+
+[git_branch]
+symbol = '[ ](fg:#81a1c1 bg:#434c5e)'
+format = '[[ $symbol$branch](fg:#d8dee9 bg:#434c5e)](fg:#434c5e)'
+
+[git_status]
+format = '[[($all_status$ahead_behind)](fg:#d8dee9 bg:#434c5e)](fg:#434c5e)'
+
+[status]
+symbol = '[󰅙 ](fg:#bf616a bg:#4c566a)'
+success_symbol = '[ ](fg:#a3be8c bg:#4c566a)'
+not_executable_symbol = '[ ](fg:#d08770 bg:#4c566a)'
+not_found_symbol = '[ ](fg:#ebcb8b bg:#4c566a)'
+sigint_symbol = '[󰿅 ](fg:#a3be8c bg:#4c566a)'
+format = '[$symbol](#4c566a)'
+map_symbol = true
+disabled = false
+
+[sudo]
+symbol = '[ SUDO](fg:#bf616a bg:#3b4252)'
+disabled = false
+format = '[ $symbol](#3b4252)'
+
+[fill]
+symbol = ' '
+
+[cmd_duration]
+min_time = 0
+format = '[$duration](fg:#d8dee9 bg:#4C566A)'
+
+
+[battery]
+disabled = false
+full_symbol	= '[󰁹](fg:#81a1c1 bg:#4C566A)'
+charging_symbol	= '[󱟠](fg:#a3be8c bg:#4C566A)'
+discharging_symbol = '[󱟞](fg:#ebcb8b bg:#4C566A)'
+unknown_symbol	= '[󰁽](fg:#b48ead bg:#4C566A)'
+empty_symbol = '[󱃍](fg:#bf616a bg:#4C566A)'
+format = '[$symbol$percentage](fg:#d8dee9 bg:#434c5e)'
+
+[[battery.display]]
+threshold = 50
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = '[$ram_pct](fg:#d8dee9 bg:#3b4252)'
+
+[time]
+disabled = false
+time_format = '%R'
+format = '[[$time](fg:#d8dee9 bg:#434c5e)](bg:#434c5e)'
+
+[character]
+success_symbol = '[ 󰄾 ](fg:#a3be8c bg:#434c5e)'
+error_symbol = '[ 󰄾 ](fg:#bf616a bg:#434c5e)'
+vimcmd_symbol = '[  ](fg:#a3be8c bg:#434c5e)'
+format = '[$symbol](#434c5e)'
